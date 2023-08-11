@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Dancing+Script&family=Great+Vibes&family=Londrina+Outline&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Dancing+Script&family=Great+Vibes&family=Londrina+Outline&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&family=Source+Code+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+            <img src="Screenshot_2023-08-11_115145-removebg-preview.png" alt="">
+            </div>
+            <div class="elem">
+                <h3>UI/UX Designer</h3>
+            </div>
+            <div class="elem">
+                <h3>loves to help brands</h3>
+            </div>
+            <div class="elem">
+                <img src="Screenshot_2023-08-11_100043-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="bg">
+      <nav>
+        <img class="navitem" src="Screenshot_2023-08-11_100043-removebg-preview.png" alt="" />
+        <div id="links">
+          <a class="navitem" href="#">Home </a>
+          <a class="navitem" href="#">Contact</a>
+          <i  class="ri-search-line navitem"></i>
+          <i  id="menu" class="ri-menu-line navitem"></i>
+
+          <!-- <a href="#">Project</a> -->
+        </div>
+      </nav>
+      <div id="sections">
+        <div id="left">
+          <div id="smline"></div>
+          <h4 class="leftitem">Hello, I' am 👋</h4>
+          <img class="leftitem" src="Screenshot_2023-08-11_115145-removebg-preview.png" alt="" />
+          <h5 class="leftitem">a designer from <span>india.</span></h5>
+          <div class="leftitem" id="playbtn">
+            <img
+              src="https://images.unsplash.com/photo-1635614017406-7c192d832072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+              alt=""
+            />
+            <h5>see my <span class="bold">work profile</span></h5>
+          </div>
+          <div id="Contact">
+            <h3 class="leftitem">contact me</h3>
+            <h6 class="leftitem">Email : <span>someone@email.com</span></h6>
+            <h6 class="leftitem">Contact Number: <span>+91-123456789</span></h6>
+          </div>
+        </div>
+        <div id="right">
+          <img src="Screenshot_2023-08-11_114726-removebg-preview.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var menu = document.querySelector("#menu");
+      var bg = document.querySelector("#bg");
+      var count = 0;
+
+      menu.addEventListener("click", function () {
+        if (count == 0) {
+          bg.style.transform = "scale(0.8)";
+          bg.style.borderRadius = "10px";
+          bg.style.boxShadow = "0 150px 45px -100px rgba(0,0,0,0.2)";
+          count = 1;
+        }
+
+        // if(count == 1){}
+        else {
+          count = 0;
+          // menu.addEventListener('click',()=>{
+          bg.style.transform = "scale(1)";
+          bg.style.borderRadius = "0px";
+          // S
+        }
+        // )
+      });
+
+      // }
+      // else{}
+      //     if(count == 1){
+      //     count = 0
+      //     menu.addEventListener('click',()=>{
+      //         bg.style.transform = 'scale(1)';
+      //         bg.style.borderRadius = '0px';
+      //         // S
+      //     })
+
+      // }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
